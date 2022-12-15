@@ -1,0 +1,180 @@
+p{
+    color: noir;
+    
+}
+
+nav{
+display: flex; /* permet d'aligner les éléments*/
+flex direction: row; /* permet également d'aligner les éléments*/
+flex-wrap: wrap;
+justify-content: space-between;/* permet de mettre un grand espace entre le DIV et les Li*/
+align-items: center;
+position: sticky;
+top: 0;
+background-color:white; /* permet de mettre une couleur d'arrière plan en blanc afin qu'elle ne soit pas transparente*/
+margin-right: 5px; /* permet de mettre une marge de 5px à droite du texte*/
+}
+
+.profile {
+font-size: 13px; /*permet de changer le taille de la police*/
+margin-left: 10px; /*permet de mettre une marge à gauche du texte*/
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position : sticky;
+    top: 0;
+    background-color: white;
+    list-style-type: none ;
+}
+
+
+nav.onglets h3{
+    margin-left: 20px;
+}
+
+
+nav ul li{ 
+    display: flex;
+    margin-left: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+    flex-wrap: wrap;
+    align-items: center;
+    position : sticky;
+    top: 0;
+    background-color: white
+}
+
+nav ul li:hover {
+border-bottom-color: black ;
+}
+
+ul > li {
+    display: inline-block;
+    float: right;
+    /* You can also add some margins here to make it look prettier */
+   }
+   
+body, html {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background: transparent;
+    color: black;
+    background-repeat: fixed no-repeat;
+    
+}
+
+.page-content{
+margin: 4%;
+}
+
+.page-content header{
+margin-top: 5%;
+max-width: 80%;
+}
+
+.page-content header H1{
+margin: 0;
+font-family: 'Genos', sans-serif;
+font-size: 6vw;
+}
+
+.page-content header p{
+    line-height: 30px;
+    color: black;
+}
+
+.page-content header button {
+background-color: inherit;
+border: none;
+outline: none;
+padding-left: 0;
+font-size: 15px;
+font-weight: bold;
+border-bottom: 1px solid grey;
+cursor: pointer ;
+}
+
+.page-content header button:hover{
+color: grey;
+border-bottom-color: black;
+}
+
+.page-content.presentation-image {
+    margin top: 10%;  
+    padding: 10%;
+}
+
+.page-content.presentation-image img {
+    max-width: 100%;
+    height: auto;
+    transition: filter 0.5s;
+    margin-right: 15px;
+}
+
+
+.page-content .presentation-image img:hover{
+filter: brightness(50%);
+}
+ 
+
+@media screen and (max-width:700px){  
+   nav{
+    justify-content:center;
+   }
+   nav ul {
+   display: none;
+   }
+
+.page-content header {
+   margin-top: 10%;
+   max-width: 100%;
+   }
+
+footer{
+    justify-content: flex-start;
+}
+
+footer.column{
+width: 80%;
+ }
+
+}
+
+body{
+    padding: 0 ;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+footer {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-weight: 100%;
+
+}
+footer.background-color{
+    font-weight: 100%;
+    height: 100%;
+    margin-bottom: 0;
+}
+
+footer .colonne p {
+    font-size:13px;
+    color: darkgrey;
+    cursor: pointer ;
+}
+
+footer.colonne p:hover {
+    color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2? family=Genos:wght@100;500&family=Oswald&family=Raleway:wght@100;200;300&display=swap')
